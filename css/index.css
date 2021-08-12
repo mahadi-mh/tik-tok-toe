@@ -1,0 +1,67 @@
+body {
+    background-color: grey;
+}
+
+html {
+    font-size: 72.5%;
+}
+
+header {
+    text-align: center;
+    font-size: 7rem;
+}
+
+.box-container {
+    margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(3, 10rem);
+    grid-template-rows: repeat(3, 10rem);
+    justify-content: center;
+    align-content: center;
+}
+
+#div1,
+#div2,
+#div3,
+#div4,
+#div5,
+#div6,
+#div7,
+#div8,
+#div9 {
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    border: 5px solid rgb(17, 15, 15);
+    border-top: none;
+}
+
+#div7,
+#div8,
+#div9 {
+    border-bottom: none;
+}
+
+#div1,
+#div4,
+#div7 {
+    border-left: none;
+}
+
+#div3,
+#div6,
+#div9 {
+    border-right: none;
+}
+
+@media(max-width:999px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 30%;
+    }
+}
